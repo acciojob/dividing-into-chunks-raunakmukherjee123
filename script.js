@@ -3,7 +3,7 @@ const arr = [1, 2, 3, 4, 1, 0, 2, 2];
 const divide = (arr, n) => {
   let i=0;
 	let s=0;
-	let arr=[];
+	let arr1=[];
 	let curr=[];
 	while(i<arr.length)
 		{
@@ -11,7 +11,7 @@ const divide = (arr, n) => {
 			if(s>n)
 			{
 				s=0;
-				arr.push(curr);
+				arr1.push(curr);
 				curr=[];
 			}
 			curr.push(s);
@@ -19,9 +19,9 @@ const divide = (arr, n) => {
 		}
 	if(curr.length>0)
 	{
-		arr.push(curr);
+		arr1.push(curr);
 	}
-	return arr;
+	return arr1;
 };
 
 const n = prompt("Enter n: ");
