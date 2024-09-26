@@ -3,8 +3,8 @@ const arr = [1, 2, 3, 4, 1, 0, 2, 2];
 const divide = (arr, n) => {
   let i=0;
 	let s=0;
-	const arr=[];
-	const curr=[];
+	let arr=[];
+	let curr=[];
 	while(i<arr.length)
 		{
 			s+=arr[i];
