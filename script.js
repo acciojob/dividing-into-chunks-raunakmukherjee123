@@ -1,5 +1,8 @@
-const arr = [1, 2, 3, 4, 1, 0, 2, 2];
+https://course.acciojob.com/open-web-editor?question=c2fe534a-e405-494a-afd4-56c98851e090
 
+
+
+const arr = [1, 2, 3, 4, 1, 0, 2, 2];
 const divide = (arr, n) => {
   let i=0;
 	let s=0;
@@ -10,11 +13,11 @@ const divide = (arr, n) => {
 			s+=arr[i];
 			if(s>n)
 			{
-				s=0;
+				s=arr[i];
 				arr1.push(curr);
 				curr=[];
 			}
-			curr.push(s);
+			curr.push(arr[i]);
 			i++;
 		}
 	if(curr.length>0)
@@ -24,5 +27,5 @@ const divide = (arr, n) => {
 	return arr1;
 };
 
-const n = prompt("Enter n: ");
+//const n = prompt("Enter n: ");
 alert(JSON.stringify(divide(arr, n)));
